@@ -1,34 +1,47 @@
-import '@/app/globals.css';
 import type { Metadata } from "next";
-import { Inter as FontSans} from 'next/font/google';
+import { Poppins as FontSans } from "next/font/google";
+import "./globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/providers/ThemeProvider";
+import ModalProvider from "@/providers/ModalProvider";
+import { Toaster } from "sonner";
+
 
 
 const fontSans = FontSans({
-  subsets: ['latin'],
+  subsets: ["latin"],
   variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-export const metadata:  Metadata = {
-  title: "CamHiepLong",
-  description: "Camera, high-end notebook PC Distributions"
+export const metadata: Metadata = {
+  title: "Cam Hiệp Long",
+  description: "your ultimate gadgets shop",
 };
- 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="vi">
       <body
-      className={cn(
-        "min-h-screen bg-sky-400 font-sans antialiased hide-scrollbar",
-        fontSans.variable
-      )}
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased hide-scrollbar",
+          fontSans.variable
+        )}
       >
-      {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <ModalProvider />
+          <Toaster position="top-right" duration={2000} />
+        </ThemeProvider>
       </body>
     </html>
   );
