@@ -507,7 +507,7 @@ export const productsData = [
   {
     id: 17,
     name: "Camera IP 4MP Dahua DH-IPC-HFW2449M-S-B-PRO",
-    category: "Camera IP",
+    category: "CameraIP",
     description: [
       "DAHUA DH-IPC-HFW2449M-S-B-PRO là camera quan sát IP chính hãng, thiết kế dạng bán cầu, với công nghệ hồng ngoại thông minh. Camera hỗ trợ hỗ trợ ánh sáng kép thông minh cùng tầm quan sát xa 50 mét, hỗ trợ tính năng phát hiện thông minh, tích hợp míc. Hỗ trợ chống bụi nước IP67.",
       "Với công nghệ AI-ISP kết hợp cảm biến lớn, camera DAHUA DH-IPC-HFW2449M-S-B-PRO cho hình ảnh vượt trội ban đêm cũng như ban ngày. Trải nghiệm công nghệ WizColor mới nhất của Dahua, hình ảnh ban đêm rực rỡ như ban ngày. Camera thiết kế chắc chắn, vỏ kim loại, kèm chân đế. Camera phù hợp lắp đặt camera cho gia đình, cửa hàng, văn phòng, trung tâm thương mại, nhà xưởng, …"],
@@ -556,7 +556,7 @@ export const productsData = [
   {
     id: 18,
     name: "Camera IP Wifi Bullet C1 4MP Smart Dual Light DAHUA DH-F4C-PV",
-    category: "Camera WiFi",
+    category: "CameraWiFi",
     description:
       "DAHUA DH-F4C-PV thiết kế nhỏ gọn nhẹ, độ phân giải cao 4.0 megapixel, tầm quan sát xa 30m dùng trong nhà cho hình ảnh rõ nét. Hoạt động rất dễ dàng qua thiết bị di động (Android/iOS), cho phép người dùng hoạt động thoải mái.",
     aboutItem: [

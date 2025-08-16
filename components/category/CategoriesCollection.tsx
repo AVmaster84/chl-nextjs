@@ -26,7 +26,7 @@ const CategoriesCollection = () => {
   );
 
   const computers = productsData.filter(
-    (item) => item.category.toLowerCase() === "computers"
+    (item) => item.category.toLowerCase() === "laptop"
   );
 
   return (

@@ -14,6 +14,7 @@ import { ArrowRight, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 import { bannerData } from "@/data/banner/bannerData";
 import { cn } from "@/lib/utils";
+import { interTight } from "@/components/ui/fonts";
 import Link from "next/link";
 
 const HeroBannerOne = () => {
@@ -33,17 +34,17 @@ const HeroBannerOne = () => {
             {bannerData.map((data) => (
               <CarouselItem
                 key={data.title}
-                className={`relative rounded-xl flex flex-col-reverse md:flex-row items-center justify-evenly p-2`}
+                className={`$(interTight.className) font-bold relative rounded-xl flex flex-col-reverse md:flex-row items-center justify-evenly p-2`}
               >
                 <motion.div
                   initial={{ y: -100, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, delay: 0.1 }}
-                  className="text-center justify-center space-y-4"
+                  className={"$(interTight.className) text-center justify-center space-y-4"}
                 >
-                  <p className="flex items-center justify-center gap-4 -mb-4 text-xl font-bold rounded-xl  text-rose-600">
+                  <p className="flex items-center justify-center gap-2 mb-4 text-2xl font-bold rounded-xl  text-rose-700">
                     <Rocket className="animate-bounce" size={40} />
-                    <span className="text-blue-800">{data.discountText}</span>
+                    <span className="text-blue-900">{data.discountText}</span>
                   </p>
                   <h2
                     className={cn(
@@ -58,7 +59,7 @@ const HeroBannerOne = () => {
                   <Link href={data.link} className="block ">
                     <Button
                       size={"lg"}
-                      className="text-xl p-3 md:p-8 rounded-full gap-2 md:gap-4 mb-4"
+                      className="text-2xl p-3 md:p-8 rounded-full gap-2 md:gap-4 mb-4"
                     >
                       <ArrowRight className="text-rose-500" /> {data.button}
                     </Button>
@@ -72,10 +73,10 @@ const HeroBannerOne = () => {
                 >
                   {/* main product image */}
                   <Image
-                    className="bg-transparent rotate-6 relative z-50 object-contain"
+                    className="bg-transparent rotate-2 relative z-50 object-contain"
                     src={data.images[0]}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     alt="banner image"
                   />
                 </motion.div>

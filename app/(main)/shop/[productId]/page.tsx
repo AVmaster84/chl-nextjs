@@ -5,6 +5,7 @@ import React from "react";
 import RelatedProducts from "@/components/products/RelatedProducts";
 import BreadcrumbComponent from "@/components/others/Breadcrumb";
 import ProductDetails from "@/components/product/ProductDetails";
+import { notFound } from "next/navigation";
 
 // Define the props interface for the component
 interface ProductIdPageProps {
@@ -12,13 +13,17 @@ interface ProductIdPageProps {
 }
 
 // Define the main component
-const ProductIdPage = ({ params }: ProductIdPageProps) => {
+const ProductIdPage = async ({ params }: ProductIdPageProps) => {
   // TODO: fetch product data with the productId
 
   // Find the product with the specified ID from the products data
   const product = productsData.find(
     (product) => product.id === Number(params.productId)
   );
+
+  if (!product) {
+    notFound();
+  }
 
   // Filter related products based on the category of the current product
   const relatedProducts = productsData.filter(

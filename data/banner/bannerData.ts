@@ -1,27 +1,27 @@
 
 export const bannerData = [
     {
-        title:'Dominate the Competition with the Legion X7',
-        description:'Unleash ultimate gaming power with the Legion X7. Featuring a top-of-the-line processor, powerful graphics card, and a high-refresh-rate display.',
-        images:['/images/banner/gaming-laptop.png'],
-        button:'Shop Gaming Laptops',
-        discountText:'Buy now Get 10% off',
-        link: `shop?category=Computers`
+        title:'Camera Dahua Picoo Dual',
+        description:'Giám sát toàn cảnh, bảo vệ tối ưu với 2 phiên bản 6MP và 10MP với 2 mắt cam (1 cố định + 1 quay quét',
+        images:['/images/banner/DH-H5D-5F.png'],
+        button:'Shop WiFi Camera',
+        discountText:'Giảm ngay 10% khi mua online',
+        link: `shop?category=camerawifi`
     },
     {
-        title:'Introducing the All-New NovaPhone 15',
-        description:'Experience unparalleled performance with our most advanced phone yet. Blazing-fast processor, stunning camera system, and a revolutionary display.',
-        images:['/images/banner/iphone.png'],
-        button:'Order Now',
-        discountText:'Buy now Get 5% off',
-        link:`shop?category=Smartphones`
+        title:' IMOU Ranger Dual Pro 6MP',
+        description:'Camera 2 ống kính quay quét 6 MP (3.0MP cho cố định và 3.0 MP cho quay quét. Chế độ phát hiện đối tượng kèm ánh sáng kép thông minh',
+        images:['/images/banner/IPC-S2XEP-10M0S.png'],
+        button:'Mua thôi',
+        discountText:'Nhanh là có ngay giảm giá 5%',
+        link:`shop?category=camerawifi`
     },
     {
-        title:'High-resolution noise-canceling headphones.',
-        description:'Immerse Yourself in Pure Sound with the SonicPro Max',
-        images:['/images/banner/headphone.png'],
-        button:'Shop Headphones',
-        discountText:'Buy now Get 15% off',
-        link:'shop?category=Headphones'
+        title:'Lenovo Legion Pro 7i 2025 Y9000P ',
+        description:'Intel Ultra 9-275HX | 32GB RAM | RTX5070 Ti',
+        images:['/images/banner/lenovo-black.png'],
+        button:'Shop Computers',
+        discountText:'Mua nhanh thôi',
+        link:'shop?category=Computers'
     },
 ]

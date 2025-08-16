@@ -7,7 +7,7 @@
     },
     { 
       id: 2, 
-      name: "Máy tính cá nhân", 
+      name: "Laptop", 
       description: "Khám phá những dòng máy tính mạnh mẽ cả cho làm việc và giải trí", 
       image: "/images/products/dell-gaming-removebg-preview.png"
     },
@@ -25,13 +25,13 @@
     },
     { 
       id: 5, 
-      name: "Camera WiFi", 
+      name: "CameraWiFi", 
       description: "Các loại camera an ninh có kết nối không dây, đa dạng chức năng cho người dùng cá nhân và gia đình", 
       image: "/images/products/camerawifi.png"
     },
     { 
       id: 6, 
-      name: "Camera IP", 
+      name: "CameraIP", 
       description: "Các loại camera chuyên dụng đáp ứng hầu hết các nhu cầu sử dụng của khách hàng", 
       image: "/images/products/HFW2449M-S-B-PRO.png"
     },
