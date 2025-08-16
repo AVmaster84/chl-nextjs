@@ -4,7 +4,7 @@ import ProductViewChange from "../product/ProductViewChange";
 import { productsData } from "@/data/products/productsData";
 import Pagination from "../others/Pagination";
 import SingleProductListView from "@/components/product/SingleProductListView";
-import { Product, SearchParams } from "@/types";
+import { Product, SearchParams } from "@/lib/types";
 import SingleProductCartView from "../product/SingleProductCartView";
 import { Loader2 } from "lucide-react";
 import Loader from "../others/Loader";
@@ -67,16 +67,28 @@ const ShopPageContainer = ({
   };
 
   // Update filtered data whenever search params change
-  useEffect(() => {
+  
+  // Default:
+  // useEffect(() => {
+  //   setLoading(true);
+  //   const filteredProducts = filterData();
+  //   setFilteredData(filteredProducts);
+  //   setCurrentPage(1); // Reset pagination to first page when filters change
+  //   setLoading(false);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [searchParams]);
+
+
+ // Gemini fix:
+   useEffect(() => {
     setLoading(true);
     const filteredProducts = filterData();
-    setFilteredData(filteredProducts!);
-    setCurrentPage(1); // Reset pagination to first page when filters change
+    setFilteredData(filteredProducts);
+    setCurrentPage(1);
     setLoading(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchParams]);
-
+  }, [filterData]); // Or other dependencies that filterData relies on
   // change currentPage when searchparams page change
+  
   useEffect(() => {
     setCurrentPage(Number(searchParams.page) || 1);
   }, [searchParams.page]);

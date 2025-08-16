@@ -4,7 +4,7 @@ import RatingReview from "../others/RatingReview";
 import Link from "next/link";
 import Image from "next/image";
 import ProductOptions from "./ProductOptions";
-import { Product } from "@/types";
+import { Product } from "@/lib/types";
 import { calculateDiscount } from "@/lib/calculateDiscount";
 import { useRouter } from "next/navigation";
 

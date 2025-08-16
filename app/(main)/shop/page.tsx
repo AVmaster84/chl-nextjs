@@ -1,3 +1,17 @@
-export default function Page() {
-  return <h3>trang hang hoa</h3>
+import ShopPageOne from "@/components/pages/shop-pages/ShopPageOne";
+import { SearchParams } from "@/lib/types";
+import React from "react";
+
+function ShopPage({
+  searchParams,
+}: {
+  searchParams: SearchParams
+}) {
+  return (
+    <div>
+      <ShopPageOne searchParams={searchParams} />
+    </div>
+  );
 }
+
+export default ShopPage;

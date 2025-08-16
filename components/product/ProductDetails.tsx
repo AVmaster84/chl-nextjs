@@ -8,7 +8,7 @@ import ProductQuantityChange from "./ProductQuantityChange";
 import RatingReview from "../others/RatingReview";
 import ProductDescription from "./ProductDescription";
 import ProductColorSelection from "./ProductColorSelection";
-import { Product } from "@/types";
+import { Product } from "@/lib/types";
 import Link from "next/link";
 import { calculateDiscount } from "@/lib/calculateDiscount";
 
@@ -53,6 +53,7 @@ const ProductDetails = ({ product }: { product: Product }) => {
         setColor={setSelectedColor}
         allColors={product.color!}
       />
+
 
       <div className="flex items-center gap-6">
         <div className="">

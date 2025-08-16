@@ -1,1 +1,1 @@
-export const brandsData = ['Apple','Sony','Samsung','Peco','Realme'];
+export const brandsData = ['Apple','Sony','Samsung','Peco','Realme','Dahua', 'Imou'];

@@ -7,7 +7,6 @@ import ModalProvider from "@/providers/ModalProvider";
 import { Toaster } from "sonner";
 
 
-
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
