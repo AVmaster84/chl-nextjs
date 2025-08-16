@@ -1,0 +1,1 @@
+export const Materials = ['kim loại', 'nhựa']

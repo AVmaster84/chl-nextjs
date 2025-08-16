@@ -158,15 +158,14 @@
   }
 }
 
-
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
-
-
 /* animation properties */
 @keyframes blob1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
   50% {
@@ -175,7 +174,8 @@ html, body {
 }
 
 @keyframes blob2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
   50% {
@@ -184,7 +184,8 @@ html, body {
 }
 
 @keyframes blob3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
   50% {
@@ -204,7 +205,6 @@ html, body {
   animation: blob3 6s infinite alternate;
 }
 
-
 /* Define animation for ProductOptions */
 @keyframes slideInFromRight {
   from {
@@ -217,14 +217,13 @@ html, body {
 
 /* Add animation for ProductOptions */
 
-
 .slideCartOptions {
   animation: slideInFromRight 0.3s ease; /* Apply animation on hover */
 }
 
 .hide-scrollbar {
   /* For modern browsers */
-  scrollbar-width: none;  
+  scrollbar-width: none;
 
   /* For older Webkit browsers (Safari, older Chrome) */
   -webkit-scrollbar {
